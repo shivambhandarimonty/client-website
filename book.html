@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Stay | Hotel Kedareshwaram</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-[#f8f5f2]">
+
+    <!-- Nav -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center gap-2">
+            <div class="w-12 h-12 bg-[#D4AF37] rounded-full flex items-center justify-center text-white font-bold text-2xl shadow-lg">K</div>
+            <span class="text-2xl font-serif font-bold tracking-tighter text-[#1a1a1a]">Kedareshwaram</span>
+        </div>
+        <div class="hidden lg:flex gap-10 font-medium text-sm uppercase tracking-widest text-gray-600">
+            <a href="index.html" class="hover:text-[#D4AF37]">Home</a>
+            <a href="about.html" class="hover:text-[#D4AF37]">Our Story</a>
+            <a href="rooms.html" class="hover:text-[#D4AF37]">Rooms</a>
+            <a href="amenities.html" class="hover:text-[#D4AF37]">Amenities</a>
+            <a href="book.html" class="text-[#D4AF37]">Book Now</a>
+        </div>
+    </nav>
+
+    <section class="py-32 max-w-4xl mx-auto px-6">
+        <div class="bg-white p-12 rounded-[2.5rem] shadow-2xl border border-gray-50">
+            <h2 class="text-4xl font-serif font-bold mb-8 text-center">Confirm Your Reservation</h2>
+            
+            <form id="bookingForm" class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="text-xs font-bold uppercase text-gray-400 tracking-widest">Arrival Date</label>
+                        <input type="date" id="booking_date" name="booking_date" required class="w-full border-b-2 py-3 outline-none focus:border-gold">
+                    </div>
+                    <div>
+                        <label class="text-xs font-bold uppercase text-gray-400 tracking-widest">Guests</label>
+                        <select id="guests_count" name="guests_count" class="w-full border-b-2 py-3 outline-none focus:border-gold">
+                            <option>1 Person</option>
+                            <option>2 Persons</option>
+                            <option>3+ Persons</option>
+                        </select>
+                    </div>
+                    <div class="md:col-span-2">
+                        <label class="text-xs font-bold uppercase text-gray-400 tracking-widest">Bed Type</label>
+                        <select id="beds_count" name="beds_count" class="w-full border-b-2 py-3 outline-none focus:border-gold">
+                            <option>Single Bed</option>
+                            <option>Double Bed</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="text-xs font-bold uppercase text-gray-400 tracking-widest">Full Name</label>
+                        <input type="text" id="customer_name" name="customer_name" required class="w-full border-b-2 py-3 outline-none focus:border-gold">
+                    </div>
+                    <div>
+                        <label class="text-xs font-bold uppercase text-gray-400 tracking-widest">Phone</label>
+                        <input type="tel" id="customer_phone" name="customer_phone" required class="w-full border-b-2 py-3 outline-none focus:border-gold">
+                    </div>
+                </div>
+                <button type="submit" id="finalBookBtn" class="w-full bg-gold text-white py-5 rounded-2xl font-bold hover:scale-105 transition-all shadow-lg mt-8">
+                    PAY VIA GPAY
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/916398016483?text=Namaste! I want to know more about Hotel Kedareshwaram." 
+       class="fixed bottom-10 right-10 z-50 bg-[#25D366] p-5 rounded-full shadow-2xl hover:scale-110 transition-all group">
+        <i data-lucide="message-circle" class="text-white" size="30"></i>
+        <span class="absolute right-full mr-4 bg-white text-gray-800 px-4 py-2 rounded-lg text-xs font-bold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-all shadow-xl">WhatsApp Us</span>
+    </a>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

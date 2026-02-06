@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Hotel Kedareshwaram</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-[#fdfcfb]">
+
+    <!-- Nav -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center gap-2">
+            <div class="w-12 h-12 bg-[#D4AF37] rounded-full flex items-center justify-center text-white font-bold text-2xl shadow-lg">K</div>
+            <span class="text-2xl font-serif font-bold tracking-tighter text-[#1a1a1a]">Kedareshwaram</span>
+        </div>
+        <div class="hidden lg:flex gap-10 font-medium text-sm uppercase tracking-widest text-gray-600">
+            <a href="index.html" class="hover:text-[#D4AF37]">Home</a>
+            <a href="about.html" class="hover:text-[#D4AF37]">Our Story</a>
+            <a href="rooms.html" class="hover:text-[#D4AF37]">Rooms</a>
+            <a href="amenities.html" class="text-[#D4AF37]">Amenities</a>
+            <a href="book.html" class="bg-[#1a1a1a] text-white px-6 py-2 rounded-full hover:bg-gold transition-all">Book Now</a>
+        </div>
+    </nav>
+
+    <section class="py-32 max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-5xl font-serif font-bold">World Class Amenities</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="bg-white p-10 rounded-3xl shadow-lg border border-gray-100 flex flex-col items-center text-center">
+                <i data-lucide="waves" class="text-gold mb-6" size="48"></i>
+                <h4 class="font-bold text-xl mb-2">Garam Paani</h4>
+                <p class="text-gray-500 text-sm">24 Ghante garam paani ki suvidha.</p>
+            </div>
+            <div class="bg-white p-10 rounded-3xl shadow-lg border border-gray-100 flex flex-col items-center text-center">
+                <i data-lucide="wifi" class="text-gold mb-6" size="48"></i>
+                <h4 class="font-bold text-xl mb-2">Free WiFi</h4>
+                <p class="text-gray-500 text-sm">Apne parivar se hamesha jude rahein.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/916398016483?text=Namaste! I want to know more about Hotel Kedareshwaram." 
+       class="fixed bottom-10 right-10 z-50 bg-[#25D366] p-5 rounded-full shadow-2xl hover:scale-110 transition-all group">
+        <i data-lucide="message-circle" class="text-white" size="30"></i>
+        <span class="absolute right-full mr-4 bg-white text-gray-800 px-4 py-2 rounded-lg text-xs font-bold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-all shadow-xl">WhatsApp Us</span>
+    </a>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

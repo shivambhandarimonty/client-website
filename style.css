@@ -1,0 +1,43 @@
+:root {
+    --gold: #D4AF37;
+    --charcoal: #1a1a1a;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, .font-serif {
+    font-family: 'Playfair Display', serif;
+}
+
+.bg-gold {
+    background-color: var(--gold);
+}
+
+.text-gold {
+    color: var(--gold);
+}
+
+.border-gold {
+    border-color: var(--gold);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    filter: invert(0.6) sepia(1) saturate(5) hue-rotate(10deg);
+}
+
+.payment-btn.active {
+    background-color: var(--gold);
+    color: white;
+}
+
+/* Form Animations */
+#bookingForm input:focus, #bookingForm select:focus {
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: scale(0.98);
+}
